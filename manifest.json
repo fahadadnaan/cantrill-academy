@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Add a new switcher to settings dropdown to hide sidebar",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
